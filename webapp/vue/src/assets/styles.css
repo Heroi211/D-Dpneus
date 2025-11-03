@@ -1,34 +1,382 @@
-.bg-custom {
-  background-color: #013104 !important;
+/* =============================== */
+/*        PALETA DE CORES D&D      */
+/* =============================== */
+:root {
+  --green-dark: #013104;
+  --green-medium: #025b07;
+  --green-footer: #0b2e0b;
+  --gray-light: rgba(238, 235, 235, 0.377);
 }
 
-.expired-row {
-  background-color: rgba(238, 235, 235, 0.377) !important;
+/* =============================== */
+/*        NAVBAR                   */
+/* =============================== */
+.bg-custom,
+.navbar {
+  background-color: var(--green-dark) !important;
 }
 
-.footer {
-  background-color: #0b2e0b !important;
+.navbar {
+  padding: 0.6rem 1rem !important;
+  border-bottom: 3px solid var(--green-footer);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-/* ==== Estilo do Footer ==== */
+.nav-link {
+  font-weight: 500;
+  color: #ffffff !important;
+  transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #b6ffb6 !important;
+  text-decoration: underline;
+}
+
+/* =============================== */
+/*        FOOTER                   */
+/* =============================== */
 #app-footer {
-  background-color: #013104 !important; /* verde personalizado */
+  background-color: var(--green-footer) !important;
   color: white;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-align: center;
-  padding: 8px 0 !important;
-  border-top: 2px solid #013104;
+  padding: 10px 0;
+  border-top: 3px solid var(--green-dark);
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.15);
+}
+
+#app-footer .footer-logo {
+  height: 32px;
+  margin-right: 8px;
+  filter: brightness(1.1);
 }
 
 #app-footer .v-col {
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-
+/* =============================== */
+/*        COMPONENTES GERAIS       */
+/* =============================== */
+.expired-row {
+  background-color: var(--gray-light) !important;
 }
 
 #app_bar {
-  background-color: #013104 !important;
+  background-color: var(--green-dark) !important;
 }
 
+/* Botões com estilo personalizado */
+.v-btn,
+.btn {
+  background-color: var(--green-dark) !important;
+  color: white !important;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 8px;
+}
+
+.v-btn:hover,
+.btn:hover {
+  background-color: var(--green-medium) !important;
+}
+
+/* =============================== */
+/*        DASHBOARD MODERNO        */
+/* =============================== */
+
+body,
+.v-main {
+  background-color: #f7f8fa !important;
+  color: #1f2937;
+  font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+/* ===== Cabeçalhos ===== */
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--green-dark);
+  margin-bottom: 20px;
+}
+
+/* ===== Cards ===== */
+.card {
+  background-color: #fff !important;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.25s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Painéis de Resumo ===== */
+.summary-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.summary-card {
+  flex: 1;
+  min-width: 220px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.summary-card:hover {
+  transform: translateY(-3px);
+}
+
+.summary-card p {
+  margin: 4px 0;
+}
+
+.summary-card .value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--green-dark);
+}
+
+/* ===== Tabelas ===== */
+.table-modern {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.table-modern th {
+  background-color: #f9fafb;
+  text-align: left;
+  padding: 10px 12px;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table-modern td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.table-modern tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* ===== Status Tags ===== */
+.status-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.status-tag.success {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.status-tag.warning {
+  background-color: #fef9c3;
+  color: #854d0e;
+}
+
+.status-tag.danger {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* ===== Botões Modernos ===== */
+.btn-modern {
+  background-color: var(--green-dark) !important;
+  color: white !important;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: all 0.2s;
+}
+
+.btn-modern:hover {
+  background-color: var(--green-medium) !important;
+}
+
+.btn-outline-modern {
+  border: 1.5px solid var(--green-dark) !important;
+  color: var(--green-dark) !important;
+  background: transparent;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+.btn-outline-modern:hover {
+  background-color: var(--green-dark) !important;
+  color: white !important;
+}
+
+.dashboard-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.chart-card canvas {
+  max-width: 100%;
+  height: 220px !important;
+}
+
+/* =============================== */
+/*        LOGIN PAGE STYLES        */
+/* =============================== */
+
+.v-main.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background: radial-gradient(circle at center, #025b07 0%, #013104 80%) !important; */
+  /* background: radial-gradient(circle at center, #038a0b 0%, #012702 90%) !important; */
+  /* background: radial-gradient(circle at 25% 25%, #027a10 0%, #013104 40%, #001e02 100%) !important; */
+  background: radial-gradient(circle at 30% 20%, #0f4e2a 0%, #41693a 100%);
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 16px;
+  transition: background 0.6s ease-in-out;
+}
+
+.v-main.login-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.25), transparent 70%);
+  pointer-events: none;
+}
+
+.v-main.login-page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.02) 0px,
+    rgba(255, 255, 255, 0.02) 1px,
+    transparent 2px,
+    transparent 4px
+  );
+  opacity: 0.4;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+
+.login-page.in-modal {
+  height: auto;
+  background: transparent !important;
+  padding: 0;
+}
+
+.login-card {
+  max-width: 420px;
+  width: 100%;
+  border-radius: 18px;
+  padding: 28px 32px;
+  background: rgba(255, 255, 255, 0.85); /* Gelo translúcido */
+  backdrop-filter: blur(8px); /* efeito vidro */
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  transition: all 0.25s ease;
+}
+
+.login-card:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.login-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--green-dark);
+  margin-bottom: 12px;
+}
+
+.btn-primary {
+  background-color: var(--green-dark) !important;
+  color: #fff !important;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  background-color: var(--green-medium) !important;
+}
+
+.btn-outline {
+  border: 1.5px solid var(--green-dark) !important;
+  color: var(--green-dark) !important;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.btn-outline:hover {
+  background-color: var(--green-dark) !important;
+  color: white !important;
+}
+
+.login-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  font-size: 0.9rem;
+}
+
+.login-links a {
+  color: #1e40af;
+  text-decoration: none;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.login-links a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.login-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  border-radius: 18px 18px 0 0;
+  background: linear-gradient(90deg, #013104, #027a10);
+}
+
+
+.login-logo {
+  height: 70px;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.8)) brightness(1.1);
+  margin-bottom: 12px;
+  object-fit: contain;
+}

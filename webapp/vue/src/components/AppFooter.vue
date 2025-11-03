@@ -1,18 +1,24 @@
 <template>
-  <v-footer id="app-footer" fixed padless style="padding: 0%;">
-    <v-row no-gutters>
-      <v-col class="text-center white--text px-4"> {{ currentYear }} Cod3bit. All rights reserved. </v-col>
-    </v-row>
+  <v-footer id="app-footer" padless>
+    <v-container fluid class="text-center py-2">
+      <v-row no-gutters>
+        <v-col>
+          <small class="white--text">
+            © {{ currentYear }} D&D Pneus — Desenvolvido por Cod3bit
+          </small>
+        </v-col>
+      </v-row>
+    </v-container>
   </v-footer>
 </template>
 
 <script>
 export default {
-  name: 'AppFooter',
+  name: "AppFooter",
   data() {
     return {
-      currentYear: new Date().getFullYear()
+      currentYear: new Date().getFullYear(),
     };
-  }
+  },
 };
 </script>

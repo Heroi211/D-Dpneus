@@ -9,7 +9,7 @@
     no-data-text="Nenhum resultado encontrado"
     loading-text="Carregando..."
     no-results-text="Nenhum resultado encontrado"
-    class="elevation-1"
+    class="table-modern card"
   >
     <template v-slot:top>
       <v-toolbar flat>

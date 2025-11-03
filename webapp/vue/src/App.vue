@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="#074293" dark extension-height="64">
+    <v-app-bar id="app_bar"  dark extension-height="64">
       <AppNav />
     </v-app-bar>
     <v-main style="margin-top: 1%;">

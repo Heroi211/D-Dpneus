@@ -1,6 +1,6 @@
 
 <template>
-  <nav class="navbar bg-custom navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar bg-custom navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img

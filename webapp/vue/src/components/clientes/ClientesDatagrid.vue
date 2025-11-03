@@ -1,7 +1,7 @@
 <template>
-  <v-data-table :loading="loading" :items="clients" :headers="headers" hide-default-footer dense
+  <v-data-table class="dd-datagrid elevation-1" :loading="loading" :items="clients" :headers="headers" hide-default-footer dense
     loading-text="Carregando..." no-data-text="Nenhum resultado encontrado"
-    no-results-text="Nenhum resultado encontrado" class="elevation-1">
+    no-results-text="Nenhum resultado encontrado">
     <template v-slot:top>
       <v-toolbar flat>
         <v-toolbar-title>Cliente</v-toolbar-title>

@@ -37,7 +37,7 @@
       </v-card-text>
 
       <v-card-actions class="justify-center mt-2">
-        <v-btn class="btn-outline" @click="cancelLogin">Cancelar</v-btn>
+        <v-btn class="btn-outline secondary" @click="cancelLogin">Cancelar</v-btn>
         <v-btn class="btn-primary" @click="handleLogin" :loading="overlay">
           Confirmar
         </v-btn>

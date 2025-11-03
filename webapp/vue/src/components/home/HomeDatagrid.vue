@@ -4,11 +4,7 @@
         <v-col cols="12" md="4">
           <v-card class="pa-3">
             <v-card-title>{{ userTitle }}</v-card-title>
-            <v-data-table
-              :headers="userInfoHeaders"
-              :items="userInfo"
-              hide-default-footer
-              dense
+            <v-data-table class="dd-datagrid elevation-1" :loading="loading" :items="userInfo" :headers="userInfoHeaders" hide-default-footer dense
             />
           </v-card>
         </v-col>

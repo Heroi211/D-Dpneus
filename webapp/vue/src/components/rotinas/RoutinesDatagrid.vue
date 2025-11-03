@@ -1,5 +1,6 @@
 <template>
   <v-data-table
+    class="dd-datagrid elevation-1"
     :loading="loading"
     :items="paginatedRoutines"
     :row-props="rowProps"
@@ -9,7 +10,6 @@
     no-data-text="Nenhum resultado encontrado"
     loading-text="Carregando..."
     no-results-text="Nenhum resultado encontrado"
-    class="table-modern card"
   >
     <template v-slot:top>
       <v-toolbar flat>

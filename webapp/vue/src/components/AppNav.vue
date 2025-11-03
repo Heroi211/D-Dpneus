@@ -3,7 +3,7 @@
     <div class="container-fluid d-flex justify-content-between align-items-center">
       <!-- Logo -->
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="/src/assets/logo.png" alt="Logo" width="48" height="48" />
+        <img id="container_navlogo" src="/src/assets/logo.png" alt="Logo" width="95" height="95" />
         <span class="text-white ms-2 fw-semibold">D&D Pneus</span>
       </a>
 

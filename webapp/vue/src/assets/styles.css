@@ -9,19 +9,8 @@
 }
 
 /* =============================== */
-/*        NAVBAR                   */
+/*        NAVBAR LINKS             */
 /* =============================== */
-.bg-custom,
-.navbar {
-  background-color: var(--green-dark) !important;
-}
-
-.navbar {
-  padding: 0.6rem 1rem !important;
-  border-bottom: 3px solid var(--green-footer);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-
 .nav-link {
   font-weight: 500;
   color: #ffffff !important;
@@ -34,18 +23,8 @@
 }
 
 /* =============================== */
-/*        FOOTER                   */
+/*        FOOTER BASE              */
 /* =============================== */
-#app-footer {
-  background-color: var(--green-footer) !important;
-  color: white;
-  font-size: 0.85rem;
-  text-align: center;
-  padding: 10px 0;
-  border-top: 3px solid var(--green-dark);
-  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.15);
-}
-
 #app-footer .footer-logo {
   height: 32px;
   margin-right: 8px;
@@ -65,11 +44,9 @@
   background-color: var(--gray-light) !important;
 }
 
-#app_bar {
-  background-color: var(--green-dark) !important;
-}
-
-/* Botões personalizados */
+/* =============================== */
+/*        BOTÕES                   */
+/* =============================== */
 .v-btn,
 .btn {
   background-color: var(--green-dark) !important;
@@ -92,7 +69,6 @@
 
 body,
 .v-main {
-  background-color: #f7f8fa !important;
   color: #1f2937;
   font-family: 'Inter', 'Roboto', sans-serif;
 }
@@ -188,12 +164,6 @@ body,
   pointer-events: none;
 }
 
-.login-page.in-modal {
-  height: auto;
-  background: transparent !important;
-  padding: 0;
-}
-
 /* ===== Card de Login (Glass Effect) ===== */
 .login-card {
   max-width: 420px;
@@ -201,7 +171,7 @@ body,
   border-radius: 18px;
   padding: 28px 32px;
   position: relative;
-  background: rgba(250, 252, 250, 0.9); /* Gelo leve */
+  background: rgba(250, 252, 250, 0.9);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow:
@@ -295,12 +265,69 @@ body,
   object-fit: contain;
 }
 
-.btn-outline.secondary {
-  border-color: #cec6c6 !important;
-  color: #444 !important;
+/* =============================== */
+/* 🌿 FUNDO GLOBAL ESPINAFRE + NAV/FOOTER GLASS */
+/* =============================== */
+
+#app,
+.v-main {
+  background: radial-gradient(circle at 30% 25%, #1a703a 0%, #0e3f1b 60%, #05260e 100%) !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
 
-.btn-outline.secondary:hover {
-  background-color: #cec6c6 !important;
-  color: white !important;
+/* Navbar sólida translúcida (sem divisão de tons) */
+#app_bar {
+  background: linear-gradient(180deg, rgba(10, 55, 20, 0.9) 0%, rgba(10, 55, 20, 0.85) 100%) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+#app_bar:hover {
+  background: linear-gradient(180deg, rgba(8, 60, 20, 0.95) 0%, rgba(8, 60, 20, 0.9) 100%) !important;
+}
+
+/* Footer integrado (sem tom cinza) */
+#app-footer {
+  background: linear-gradient(0deg, rgba(5, 25, 10, 0.85) 0%, rgba(15, 60, 25, 0.75) 100%) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  color: white;
+  transition: background 0.3s ease-in-out;
+}
+
+#app-footer:hover {
+  background: linear-gradient(0deg, rgba(5, 25, 10, 0.95) 0%, rgba(15, 60, 25, 0.85) 100%) !important;
+}
+
+
+/* =============================== */
+/* 🌟 Destaque para a logo no Navbar */
+/* =============================== */
+
+#container_navlogo {
+  background: rgba(255, 255, 255, 0.15); /* Fundo translúcido */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 14px; /* Arredondado moderno */
+  padding: 6px;
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.25),
+    inset 0 0 2px rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efeito de hover leve — aumenta brilho e elevação */
+#container_navlogo:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 6px 14px rgba(0, 0, 0, 0.3),
+    inset 0 0 3px rgba(255, 255, 255, 0.5);
 }

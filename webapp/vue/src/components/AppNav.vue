@@ -2,18 +2,8 @@
   <nav class="navbar bg-custom navbar-expand-lg">
     <div class="container-fluid d-flex justify-content-between align-items-center">
       <!-- Logo -->
-      <router-link
-        to="/home"
-        class="navbar-brand d-flex align-items-center text-decoration-none"
-        style="cursor: pointer"
-      >
-        <img
-          id="container_navlogo"
-          src="/src/assets/logo.png"
-          alt="Logo"
-          width="95"
-          height="95"
-        />
+      <router-link to="/home" class="navbar-brand d-flex align-items-center text-decoration-none" style="cursor: pointer" >
+        <img id="container_navlogo" src="/src/assets/logo.png" alt="Logo" width="95" height="95"/>
         <span class="text-white ms-2 fst-italic fw-semibold">
           Olá, {{ userName }}
         </span>

@@ -5,6 +5,7 @@
       <v-app-bar id="app_bar" dark>
         <AppNav />
       </v-app-bar>
+      <AppSideNav />
     </template>
 
     <v-main :class="{'login-page': hideNavbar}">
@@ -24,6 +25,7 @@ import { computed } from "vue";
 import { useRoute } from "vue-router";
 import AppFooter from "@/components/AppFooter.vue";
 import AppNav from "@/components/AppNav.vue";
+import AppSideNav from "@/components/AppSideNav.vue";
 import LoginModal from "@/components/login/ModalLogin.vue";
 
 const route = useRoute();
